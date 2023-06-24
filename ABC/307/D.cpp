@@ -12,14 +12,14 @@ int main(){
     for(auto c:S){
         if(c == ')' && depth > 0){
             while(ans.back() != '('){ // (に行きつくまで
-                ans.pop_back();
+                ans.pop_back(); // 末尾要素の消去
             }
             ans.pop_back(); // (を消す
             depth--;
         }
         else{
-                ans.push_back(c);
-                if(c == '(')depth++;
+            ans.push_back(c);
+            if(c == '(')depth++;
         }
     }
     cout << ans << endl;
