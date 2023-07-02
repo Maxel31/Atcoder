@@ -8,6 +8,10 @@
         "vector": "cpp",
         "map": "cpp",
         "list": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "string": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp",
+        "valarray": "cpp"
     }
 }
