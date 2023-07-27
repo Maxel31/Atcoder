@@ -7,7 +7,7 @@ const long long INF = 1LL<<60;
 ll N1, N2, M;
 
 // グラフ内の頂点aとbの最短距離を求める
-int get(vector<vector<int>> E, int s){
+auto get(vector<vector<int>> E, int s) -> int{
     int N = E.size();
     vector<int> dist(N, -1);
     queue<int> que;
