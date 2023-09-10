@@ -17,7 +17,7 @@ int main(){
 
     // 答えの範囲
     // L の中で最も大きいもの
-    ll lower = max(*max_element(L.begin(), L.end()), (ll)1) - 1;
+    ll lower = max(*max_element(L.begin(), L.end()), (ll)1) - 1; //スペース分足しているの引く
     ll upper = reduce(L.begin(), L.end()); // 合計値
 
     // 貪欲法
@@ -35,10 +35,10 @@ int main(){
             }
         }
 
-        if(row <= M) upper = mid;
+        if(row <= M) upper = mid; // 横幅が足りていれば、もっと小さくできる
         else lower = mid;
     }
 
-    cout << upper - 1 << endl;
+    cout << upper - 1 << endl; //スペース分足しているの引く
     return 0;
 }
